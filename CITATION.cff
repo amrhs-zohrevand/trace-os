@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use TRACE-OS or the TRACE principles in your research, please cite the paper that introduces them, as below."
+type: software
+title: "TRACE-OS"
+abstract: "TRACE-OS is an operating system for AI-assisted research projects: the shared environment in which researchers direct the work and AI agents carry it out and record it, putting the five TRACE principles into practice."
+authors:
+  - family-names: "Zohrehvand"
+    given-names: "Amirhossein"
+  - family-names: "Kapačinskaitė"
+    given-names: "Aldona"
+repository-code: "https://github.com/amrhs-zohrevand/trace-os"
+url: "https://trace-os.org"
+license-url: "https://github.com/amrhs-zohrevand/trace-os/blob/main/LICENSE"
+keywords:
+  - "AI-assisted research"
+  - "research governance"
+  - "trace records"
+preferred-citation:
+  type: unpublished
+  title: "TRACE: Governing AI-Assisted Research with Principles from Computer Science"
+  authors:
+    - family-names: "Zohrehvand"
+      given-names: "Amirhossein"
+    - family-names: "Kapačinskaitė"
+      given-names: "Aldona"
+  year: 2026
+  notes: "Working paper"
+  url: "https://trace-os.org"

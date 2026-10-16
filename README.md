@@ -24,3 +24,21 @@ A new project gets fresh Git history and empty research registries. Existing Git
 Read SETUP-AGENT.md for in-place setup, recovery, upgrades, skill installation and the setup receipt.
 An update follows a release pair the new release's manifest lists; SETUP-AGENT.md says how, and RELEASE-NOTICE.md which release this is. It reads historical trace records as version 1 and writes new records as version 2.
 On Windows, use `py -3.11` in place of `python` if the Python launcher selects the required version. On macOS, use `python3` when no `python` command is installed.
+
+## How to cite
+
+If you use TRACE-OS or the TRACE principles in your research, please cite the paper that introduces them:
+
+> Zohrehvand, A., & Kapačinskaitė, A. (2026). *TRACE: Governing AI-assisted research with principles from computer science* [Working paper]. https://trace-os.org
+
+```bibtex
+@misc{zohrehvand2026trace,
+  title  = {{TRACE}: Governing {AI}-Assisted Research with Principles from Computer Science},
+  author = {Zohrehvand, Amirhossein and Kapa{\v{c}}inskait{\.{e}}, Aldona},
+  year   = {2026},
+  note   = {Working paper},
+  url    = {https://trace-os.org}
+}
+```
+
+In a methods section, name the release you used, for example: "We kept the AI-assisted work of this project under the TRACE principles with TRACE-OS 0.1.0-rc24 (Zohrehvand and Kapačinskaitė 2026)." Your project's release is the `version` in `.trace-os/install.json`.
