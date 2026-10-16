@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TRACE-OS agentic review result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["revision", "target", "criteria", "evidence_examined", "checks", "evidence_unavailable", "findings", "unresolved_objections", "disposition", "confidence"],
+  "properties": {
+    "revision": {"type": "string", "description": "Commit sha reviewed, as given in the contract."},
+    "target": {"type": "string", "description": "What was reviewed: a commit, a record id, or a file set."},
+    "criteria": {"type": "array", "items": {"type": "string"}},
+    "evidence_examined": {
+      "type": "object", "additionalProperties": false, "required": ["paths", "commands"],
+      "properties": {
+        "paths": {"type": "array", "items": {"type": "string"}},
+        "commands": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false, "required": ["name", "command", "outcome"],
+        "properties": {
+          "name": {"type": "string"},
+          "command": {"type": "string"},
+          "outcome": {"type": "string", "description": "What the check printed or its exit status; not a verification claim."}
+        }
+      }
+    },
+    "evidence_unavailable": {"type": "array", "items": {"type": "string"}},
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "severity", "claim", "file", "line_start", "line_end", "quote", "source_file", "source_quote", "why", "ask"],
+        "properties": {
+          "id": {"type": "string"},
+          "severity": {"type": "string", "enum": ["high", "medium", "low"]},
+          "claim": {"type": "string"},
+          "file": {"type": "string", "description": "Path relative to the repository root."},
+          "line_start": {"type": "integer"},
+          "line_end": {"type": "integer"},
+          "quote": {"type": "string", "description": "Verbatim text from the cited lines."},
+          "source_file": {"type": "string", "description": "The source the finding rests on, as the run listed it; empty when it rests on none."},
+          "source_quote": {"type": "string", "description": "Verbatim text from that source; empty when the finding quotes none."},
+          "why": {"type": "string"},
+          "ask": {"type": "string"}
+        }
+      }
+    },
+    "unresolved_objections": {"type": "array", "items": {"type": "string"}},
+    "disposition": {"type": "string", "enum": ["advisory", "accept", "return", "refuse"]},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+  }
+}

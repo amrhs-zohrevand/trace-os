@@ -1,0 +1,32 @@
+{
+  "turn": "T1",
+  "text_sha256": "a2b3136d895e74ed27424d8a5f625e9f64b38b49bce63841ee5dc2a5e3010366",
+  "segments": [
+    {
+      "quote": "Selection matters.",
+      "role": "material",
+      "origin": "external",
+      "basis": "explicit",
+      "basis_refs": [
+        "T1"
+      ],
+      "source": "Smith"
+    },
+    {
+      "quote": "compare two groups",
+      "role": "idea",
+      "origin": "speaker",
+      "basis": "explicit",
+      "basis_refs": [
+        "T1"
+      ]
+    },
+    {
+      "quote": "Add that comparison.",
+      "role": "instruction",
+      "origin": "unknown",
+      "basis": "unknown",
+      "basis_refs": []
+    }
+  ]
+}

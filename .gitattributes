@@ -1,0 +1,21 @@
+* text=auto eol=lf
+*.jsonl text eol=lf
+# New rows go at the end of these, so two people who each add one and then
+# sync keep both, with no conflict to resolve. The defect ledger is left out:
+# it rewrites rows in place, and a union merge would keep a stale copy of a
+# row beside its update. `trace_record.py later-run` also rewrites one
+# transition row, so a sync can keep both versions of it when a partner
+# appends at the same moment; `trace_record.py registries` reports that
+# as a problem, and notes two new rows that were given the same id.
+ai/records/acceptances.jsonl merge=union
+sources/intake.jsonl merge=union
+sources/transitions.jsonl merge=union
+ai/workflow-log.md merge=union
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary
+*.otf binary
+*.ttf binary

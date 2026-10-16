@@ -1,0 +1,38 @@
+TRACE-OS licence: perpetual, non-exclusive licence to distribute
+
+Copyright (c) 2026 Amirhossein Zohrehvand and Aldona Kapačinskaitė.
+All rights reserved, except the licences given below.
+
+This licence covers this release of TRACE-OS: its scripts, instructions,
+templates and documentation (the "software"). It follows the arXiv.org
+perpetual, non-exclusive licence to distribute, under which the paper that
+describes TRACE-OS is posted.
+
+1. Distribution. The copyright holders grant the services through which
+   they distribute this release, such as the TRACE-OS repository and its
+   releases, a perpetual, non-exclusive licence to distribute it.
+
+2. Use. Anyone who obtains this release through those services may install
+   and use it in their own research, teaching and evaluation, including
+   the changes its setup and updates make to project files and the edits
+   needed to configure it for their projects, and may share it with the
+   people they work with on those projects. This permission is perpetual
+   and non-exclusive.
+
+3. Nothing else is granted. Distributing, publishing, selling or
+   sublicensing the software or a version of it, or making it publicly
+   available, including in a public repository or as part of a public
+   project, needs written permission from the copyright holders.
+
+4. Non-exclusive. The copyright holders keep their copyright and remain
+   free to license, assign or transfer it, including to a publisher.
+
+5. Your work stays yours. This licence claims nothing in the research,
+   records, manuscripts, data or other work you create with the software.
+
+6. No warranty. The software is provided "as is", without warranty of any
+   kind. The copyright holders are not liable for any claim, damage or
+   other liability arising from the software or its use.
+
+7. Later releases. A later release may carry different terms. They do not
+   change the terms of this release.

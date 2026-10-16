@@ -1,0 +1,2229 @@
+{
+  "compatibility": {
+    "install_state_schema": 1,
+    "project_schema": 1,
+    "record_schema": 2
+  },
+  "core_ingest": "Use defect_ledger.py ingest --matches; no network matching adapter is bundled.",
+  "files": {
+    ".env.example": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/.env.example",
+      "policy": "seed",
+      "profile": "core",
+      "sha256": "b10e9e51a5839cdeae0a836c044b90291e763866e802c70ebaacf13b3e0344d8",
+      "size": 1231
+    },
+    ".gitattributes": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/.gitattributes",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "0f3b837c59adf64481fcceee003f413938263cd076c276b52c523c605f0b244a",
+      "size": 799
+    },
+    ".gitignore": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/.gitignore",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "d21ea49a0da9edd48f5092bd33c8da926293fb9ca8876f18e674e6a9f35386fa",
+      "size": 376
+    },
+    ".skills/claim-evidence-audit/SKILL.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/.skills/claim-evidence-audit/SKILL.md",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "eb8364da85408c2d7116d99dcd54c7d1854d39d18bee99702683c0fee3457fb0",
+      "size": 11446
+    },
+    ".skills/literature-processing/SKILL.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/.skills/literature-processing/SKILL.md",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "1937c4bbd03cf884102ae9e831980a43f27751b44f297c2034409782fe214deb",
+      "size": 11116
+    },
+    ".skills/meeting-and-idea-intake/SKILL.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/.skills/meeting-and-idea-intake/SKILL.md",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "4a8a6f2f2beca000d79361c0953b063d8891a898fcef2a2b14a3fddd9555e36c",
+      "size": 7926
+    },
+    ".skills/trace-acceptance/SKILL.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/.skills/trace-acceptance/SKILL.md",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "e209e62773595eefd926c0daa6303458d530d6283a0dfe57c49baf1b2e4c8673",
+      "size": 3440
+    },
+    ".skills/trace-check/SKILL.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/.skills/trace-check/SKILL.md",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "2fa455996fb095484cb01b8524c01fa82a9ba0bc0f7185b51918bc9966b66a92",
+      "size": 2427
+    },
+    ".skills/trace-ctransition/SKILL.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/.skills/trace-ctransition/SKILL.md",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "53ba942a05c9d3f70eefc090facaf62cf62c2ba06ebff368d50dfb71f287d6cf",
+      "size": 3445
+    },
+    ".skills/trace-evaluate/SKILL.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/.skills/trace-evaluate/SKILL.md",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "f272b3712febdb0dfb8a0022cbddf87328394a94be99b8cd882f82b8965568e0",
+      "size": 7003
+    },
+    ".skills/trace-review/SKILL.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/.skills/trace-review/SKILL.md",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "f5eda62eff061c2077ac16e346d33fed56619befc9bd3ccaf9d6491b286d7e0e",
+      "size": 6821
+    },
+    ".skills/trace-state/SKILL.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/.skills/trace-state/SKILL.md",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "c7a186a4e1730e433ecbd5d3f9d40a75d2e92fc1cd52d36f6f02c86240d5ec57",
+      "size": 4082
+    },
+    ".skills/zotero-knowledge-base/SKILL.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/.skills/zotero-knowledge-base/SKILL.md",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "454ac995984b71e81497de1a69267fee522e527251d04c7443fedbc29e15e9e5",
+      "size": 15383
+    },
+    "AGENTS.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/AGENTS.md",
+      "policy": "seed",
+      "profile": "core",
+      "sha256": "35965ad44dac2a508c78ff85b3fb138aa86cc4830eb180f88a8670c592095de4",
+      "size": 13454
+    },
+    "CLAUDE.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/CLAUDE.md",
+      "policy": "seed",
+      "profile": "core",
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "size": 11
+    },
+    "LICENSE": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/LICENSE",
+      "policy": "release",
+      "profile": "core",
+      "sha256": "fb91b048c670ffc15d2c886bf6be44c299b47e6a87d173a7599df72b1327b37f",
+      "size": 1915
+    },
+    "README.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/README.md",
+      "policy": "seed",
+      "profile": "core",
+      "sha256": "9f2128182635f3c157b4008551876fbc083e50b0e67132d4f5bca97df22950b8",
+      "size": 2364
+    },
+    "RELEASE-NOTICE.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/RELEASE-NOTICE.md",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "4b8bac752e2428595f5ac4dafe3faa840bd81913fe08ba6541b5f88f763649d1",
+      "size": 58076
+    },
+    "SETUP-AGENT.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/SETUP-AGENT.md",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "9fa62c9667fa045e3ce6a203db699ef30c48a318292fb567bfff2f04233771a6",
+      "size": 52461
+    },
+    "WORKFLOW.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/WORKFLOW.md",
+      "policy": "seed",
+      "profile": "core",
+      "sha256": "850324ad2f4b8ee6f145593c526bbb8e0f6d5410e26b92df6432337d24fdfa18",
+      "size": 1497
+    },
+    "ai/RECORD-CONVENTION.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/ai/RECORD-CONVENTION.md",
+      "policy": "seed",
+      "profile": "core",
+      "sha256": "62aeb75399bd4b86dd79713745bc74bb09791292e9fb08c6dbff5c9297252f65",
+      "size": 17143
+    },
+    "ai/SKILL-RUN-CONTRACT.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/ai/SKILL-RUN-CONTRACT.md",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "e8a1e5d37237bff381023a0eef9739ab8785a03b4779bb2dc6722c4dc47d1b74",
+      "size": 4080
+    },
+    "ai/SKILLS-IN-USE.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/ai/SKILLS-IN-USE.md",
+      "policy": "seed",
+      "profile": "core",
+      "sha256": "e31962e57be73bc496c09207c69ce14b4c5b44adcd5d25022ef2b033a0024773",
+      "size": 5662
+    },
+    "ai/defects.jsonl": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/ai/defects.jsonl",
+      "policy": "seed",
+      "profile": "core",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "ai/records/acceptances.jsonl": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/ai/records/acceptances.jsonl",
+      "policy": "seed",
+      "profile": "core",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "ai/workflow-log.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/ai/workflow-log.md",
+      "policy": "seed",
+      "profile": "core",
+      "sha256": "9ccab2721b6852049e5af3219efc7a267f562685a546e8e81447870c9990e0d2",
+      "size": 112
+    },
+    "paper/.latexmkrc": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/paper/.latexmkrc",
+      "policy": "seed",
+      "profile": "academic",
+      "sha256": "3c8673ef46eb7d8b29a3e63cbbd35165d6fcd51f6c7b0849781e3687dc239573",
+      "size": 66
+    },
+    "paper/main.tex": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/paper/main.tex",
+      "policy": "seed",
+      "profile": "academic",
+      "sha256": "6b4475d7a7109bae55ac61708e54af938cc9de7e2c351c8c7f115cb10129901b",
+      "size": 235
+    },
+    "paper/sections/introduction.tex": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/paper/sections/introduction.tex",
+      "policy": "seed",
+      "profile": "academic",
+      "sha256": "96b6d049b5c53a633a4bf1ac2f3a80f0f4f8aea09367de7b5397c158d16057c4",
+      "size": 146
+    },
+    "presentations/_template/.latexmkrc": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/presentations/_template/.latexmkrc",
+      "policy": "seed",
+      "profile": "academic",
+      "sha256": "f8b2724d8c1b2b03f41f9f3caf6ca9fe07d45b11e89bf6d61b1ac4c84ab40f87",
+      "size": 66
+    },
+    "presentations/_template/main.tex": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/presentations/_template/main.tex",
+      "policy": "seed",
+      "profile": "academic",
+      "sha256": "147ed6f5b77333556254de8192d970c769e98f651c60d17c761ac0ba9d822a54",
+      "size": 313
+    },
+    "project.example.json": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/project.example.json",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "69b27ccc143c295e8b480abc757e31d31c9be6a33110fae3675e73bb5d1ca1a7",
+      "size": 313
+    },
+    "scripts/INPUT-PROVENANCE.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/INPUT-PROVENANCE.md",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "646878a607e69919dfe553718ce866221f6dc72d83480fedc8ea0c31423d8c51",
+      "size": 8698
+    },
+    "scripts/agentic-review-contract.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/agentic-review-contract.md",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "14bc5b6bb019fb60628ef1cc3ebff45044ed593e116ca83c74d410283f38bdfc",
+      "size": 4779
+    },
+    "scripts/agentic_review.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/agentic_review.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "aa87848e6a4ecaf03f7a99c48d2161f7b85f2383d3af7dfdd6bd4509db302422",
+      "size": 138618
+    },
+    "scripts/agentic_review.schema.json": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/agentic_review.schema.json",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "57a38845378ed2c1748f9297b1fabe96905d88aacf13138b2fff942efaaa4ce8",
+      "size": 2717
+    },
+    "scripts/bootstrap.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/scripts/bootstrap.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "c9bad202bf01c7608470cb96890a5f5bf7fc7e0263ce54955f50d6f19b7e3638",
+      "size": 108724
+    },
+    "scripts/check_build_config.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/scripts/check_build_config.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "fd1c14424b12f85558aa3404248cfe073adac72efd83b070336aac43f957a9d6",
+      "size": 2343
+    },
+    "scripts/check_skill_handoff.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/check_skill_handoff.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "e20f211f650e7c738f498b19654189863f80f64c01cc77b4bc6cb5988cecaed0",
+      "size": 5663
+    },
+    "scripts/check_skills.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/scripts/check_skills.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "c337de0e1c6c5c325e4a830afdfae1dcd7de9cbda77736662903f779f0f4a49c",
+      "size": 2646
+    },
+    "scripts/check_workflow.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/check_workflow.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "e8a3c416ab7ef7256646ee9ea974463f4de21cd90cbb89c726499fcc73fd66c6",
+      "size": 61376
+    },
+    "scripts/cite_suggest.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/cite_suggest.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "1eaf97a115b4599d852628385cdab2c5ddca28c696359dde876032173efd9685",
+      "size": 8647
+    },
+    "scripts/clean_corpus.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/clean_corpus.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "e4c9a88a39b52a7f45c3f2d75232e66d913da4dd38ad0b284307784e83614b9c",
+      "size": 8116
+    },
+    "scripts/decision.example.json": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/decision.example.json",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "a5a970c03abea3943159819174386b04d6a7bf84f7f3937e90da7e92b964fd04",
+      "size": 1101
+    },
+    "scripts/defect_ledger.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/defect_ledger.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "d9af5c4df1d2eaa06aef720776fcf3bea19f7b435aa0ff95c1e3cec98697a916",
+      "size": 102337
+    },
+    "scripts/docling_extract_corpus.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/docling_extract_corpus.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "2e780307f9810294f963173a190567b00c2b753b632b147c4100174466010aa0",
+      "size": 5757
+    },
+    "scripts/input-annotation.example.json": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/input-annotation.example.json",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "ec8adb33b390b6d22b4fb62bb9caba3a315d922ae554ad54463ef45f303b5469",
+      "size": 649
+    },
+    "scripts/input_provenance.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/input_provenance.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "8b29449a489c371f5be557504134dbfcd2ca0042f220e30422051712e67175b3",
+      "size": 8854
+    },
+    "scripts/kit_projects.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/scripts/kit_projects.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "8a837fc546b19ff5fa53f8f537ef1ea28c3c903395385535d5c1998089aec532",
+      "size": 54135
+    },
+    "scripts/meeting_quotes.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/meeting_quotes.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "1c977c479c73bde1558049720132f9568ef3f42c9cec279e635fa405b27fd93d",
+      "size": 8835
+    },
+    "scripts/record_privacy.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/record_privacy.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "dac3e6658b1642c5b28bbcc446d3b79093dfefe0fa856fc20d94b31bfd469e75",
+      "size": 8377
+    },
+    "scripts/review_grounding.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/review_grounding.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "1fac784535398e1e226552505ba3269c536bfb02f97aef1218d6dbabba134506",
+      "size": 15486
+    },
+    "scripts/review_inbox.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/review_inbox.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "b538bce36482f14dce4d14e0d6dd47154f7a1c05b5cc98e6ad95e2605389fdb9",
+      "size": 11688
+    },
+    "scripts/shared_folder.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/scripts/shared_folder.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "a0386f7e0269d37aced6f50c51e871de41255ac767cd12af5e46f81d3ba87da3",
+      "size": 52601
+    },
+    "scripts/shared_snapshot.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/scripts/shared_snapshot.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "672a8681a4f392170ac7be925cf4f2bb19b43e954b8cc9e8d4eaebb130ed23cc",
+      "size": 11862
+    },
+    "scripts/text_clean.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/text_clean.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "db55104867b35d6d4489d0afd62bc19025c80ce99ff520075c6cad4485d0728b",
+      "size": 5833
+    },
+    "scripts/trace-skills-contract.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/scripts/trace-skills-contract.md",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "3ada11269f7fa4c6c376a030c7e06b648352297e83f37742ec80d5098dec0bd0",
+      "size": 121041
+    },
+    "scripts/trace_defaults.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/scripts/trace_defaults.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "d8af439de041d79f3d494110e9dd8fe68d4a3f641450ccdb0201672a41397ad9",
+      "size": 141
+    },
+    "scripts/trace_record.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/trace_record.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "1ba33f9efcbcac2631a3580bb61636f3e73df484e824f9a367552f31934b5e67",
+      "size": 308342
+    },
+    "scripts/trace_report.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/trace_report.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "535f7ffcc4a114d6a87af61a8377652ea03c2ed6c78e49dd3f46f78db31cbb58",
+      "size": 39724
+    },
+    "scripts/trace_skills.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/scripts/trace_skills.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "f1cb05e773b04cdb056494f035d331a2f8a96570f319c70d6f0a406a69fdeeba",
+      "size": 205167
+    },
+    "scripts/trace_stats.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/trace_stats.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "3499d70bb7b6382b5a0cb532ae21803516269e4b08885cf6b0fc0fdc5bba0ccf",
+      "size": 19873
+    },
+    "scripts/trace_story.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/trace_story.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "dea8c17ebcbea63502a1d9ccc2651b955ad1d575930ca0c6a95347ca8de0daeb",
+      "size": 29595
+    },
+    "scripts/verification-evidence.example.json": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/verification-evidence.example.json",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "48865de6ee1df3cf67392b27e6568ad70624b9753959c2386adf0023f2c0515c",
+      "size": 2792
+    },
+    "scripts/zotero_add.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/zotero_add.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "85e0cd2686784ba7bd3a38b03ec91d22da261bfbad114f11b7401d68a1bcc563",
+      "size": 3957
+    },
+    "scripts/zotero_ask.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/zotero_ask.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "db2b9119a92e00ca05385bc1bf780aa34998049cec134540996a674dc3777080",
+      "size": 4282
+    },
+    "scripts/zotero_attach.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/zotero_attach.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "14537bd63f7dbcc699cf53e5f82b6b2c2a18047ceec75c5443a27983a62b6ab9",
+      "size": 7178
+    },
+    "scripts/zotero_attach_cleantext.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/zotero_attach_cleantext.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "7be0c321350671d9b52736203e435829d1c766265ccbd7492e152dbc8f83649c",
+      "size": 4807
+    },
+    "scripts/zotero_clean.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/zotero_clean.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "e556988e4aa088658a9d4d331ce039110d3d9d16de38836bd6476df235805da7",
+      "size": 5186
+    },
+    "scripts/zotero_common.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/zotero_common.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "d3dd426b9aa951c839c975ea206fa6b8b470ca6f46a6ca5ba8c1a6c73d79a03f",
+      "size": 27656
+    },
+    "scripts/zotero_dedupe.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/zotero_dedupe.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "67ef68cb393066670a7df57a5de660ef87e853c00cb5d22c53325693b807e2fb",
+      "size": 5675
+    },
+    "scripts/zotero_enrich.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/zotero_enrich.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "a300accda23377bdfd209c1c52545d4aaff83f306e43e7b6f0d1791d58a5e40e",
+      "size": 11038
+    },
+    "scripts/zotero_fill.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/zotero_fill.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "2b855e1f4249de183cfaf3a0d6a379c398665e2464f0f05269c3264ac35b9d65",
+      "size": 5588
+    },
+    "scripts/zotero_index.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/zotero_index.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "180d75a114cae5ee559f5c8566631460fca48410ce02ab28870832d5f6994f87",
+      "size": 7227
+    },
+    "scripts/zotero_reorg.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/zotero_reorg.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "29702aa4e37d98036062e4ad6cff6e41f793a60dd16d628bb1636ee854bd30ef",
+      "size": 23008
+    },
+    "scripts/zotero_taxonomy.example.json": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "scripts/zotero_taxonomy.example.json",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "0d62ab8fdcd0dbd577eda9b31a6c167be881437363a44b45d2b2146b4c38cc01",
+      "size": 5193
+    },
+    "sources/intake.jsonl": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/sources/intake.jsonl",
+      "policy": "seed",
+      "profile": "core",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "sources/memos/NOTES-CONVENTION.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/sources/memos/NOTES-CONVENTION.md",
+      "policy": "seed",
+      "profile": "core",
+      "sha256": "797fcdef7756f3ffe61f26b07c0d869ffe75e2ffad8d64ca0aa39d7b841251dd",
+      "size": 401
+    },
+    "tests/test_acceptance_queue.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "tests/test_acceptance_queue.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "ca3524e85743c20daca45dbf4877f1876c50eb59d3e3f011a05feb04687c21ea",
+      "size": 131886
+    },
+    "tests/test_agent_session.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "tests/test_agent_session.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "db77dbf935f6c7109daac82437fce2055c0d2bbe6494e0e91cf6ab0518fb8fb2",
+      "size": 12935
+    },
+    "tests/test_agentic_review.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "tests/test_agentic_review.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "aa7995bf535e9b9ad877365714b949d88b4254d661710f3641da875362cd6e20",
+      "size": 192523
+    },
+    "tests/test_bootstrap.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/tests/test_bootstrap.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "54524fd0c3979e25984e1b4cf9eb61a039136de13f778c4e95e7c70027225478",
+      "size": 119353
+    },
+    "tests/test_check_skill_handoff.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "tests/test_check_skill_handoff.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "3194d23491469ab24bcfbaf0899808c12d82cb471d5891194a47fbb51209943d",
+      "size": 18368
+    },
+    "tests/test_defect_ledger.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "tests/test_defect_ledger.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "da579b139b6c53d2d7d95eda7c3d91764b987c2bb622cf542cfd0298281cf823",
+      "size": 121061
+    },
+    "tests/test_input_provenance.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "tests/test_input_provenance.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "3dbe0e848ddf0bf3b6a5b43f0be701839842a0e6cb400ec4e2bd9b2f2f7abc9c",
+      "size": 17402
+    },
+    "tests/test_kit_projects.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/tests/test_kit_projects.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "f934f732afea15480e10ba1814a76bd67109360ed28dc8a77bc705e6969cf879",
+      "size": 39938
+    },
+    "tests/test_meeting_quotes.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "tests/test_meeting_quotes.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "e65e11c5a2f75995e822bf226e65c5a2bc9e79a84507b9e6affd0a8290cc70ac",
+      "size": 14320
+    },
+    "tests/test_record_keep.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "tests/test_record_keep.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "155dfa2ae2f6501e8d314d416fa267b8874ae88c78a49dcfc1af7b417644402e",
+      "size": 44033
+    },
+    "tests/test_review_grounding.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "tests/test_review_grounding.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "c2d268091b2df52899ac4d267e1f6f37393c840c56a737801808b4351480a710",
+      "size": 18022
+    },
+    "tests/test_shared_folder.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/tests/test_shared_folder.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "873177da4594b7e22b0c612fe17a28d9d1af8cf918fa6d43c7399eb1b126f7c7",
+      "size": 29299
+    },
+    "tests/test_shared_snapshot.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/tests/test_shared_snapshot.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "93621df2a6c26cf958cda884478d3704f5aaa7b7822e023c76720bbf6f418101",
+      "size": 7456
+    },
+    "tests/test_trace_project.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "tests/test_trace_project.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "cf903284640799dabc0802a1422eca6d848920231635883d6f6d9799f35381b0",
+      "size": 4911
+    },
+    "tests/test_trace_record.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "tests/test_trace_record.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "1b33c9d6964b3dfdff6b3c965708e40bc2103838c19ad498a100521acf5fdff2",
+      "size": 186325
+    },
+    "tests/test_trace_report.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "tests/test_trace_report.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "a8c767304410ed453810247ad4fb1bb1860c1ce4a5445c5c7ca549d29cdc7bca",
+      "size": 42847
+    },
+    "tests/test_trace_skills.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/tests/test_trace_skills.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "581f4c640cded35bb111e34882ff60fd113912ececb2aab84094ba0818617d9c",
+      "size": 146952
+    },
+    "tests/test_trace_skills_lifecycle.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/tests/test_trace_skills_lifecycle.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "d734ccd1402a3f71cb792aafe3f2f39e6a20ab051b1ef1ba460c5b5fc5e799e0",
+      "size": 141129
+    },
+    "tests/test_trace_skills_scenarios.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/tests/test_trace_skills_scenarios.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "d4ef961d395c0267afc391750b6a17a3730eaf048094290daa432cc03dd23657",
+      "size": 106018
+    },
+    "tests/test_trace_stats.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "tests/test_trace_stats.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "956d32bee6644d239f25c3b0bbf420861d85dd7de70cad841fa546c88248f13c",
+      "size": 15286
+    },
+    "tests/test_trace_story.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "tests/test_trace_story.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "f0d30d965a54991cafc68c7124216db9462b16b4c6063d8cd0814c4db54691cb",
+      "size": 46226
+    },
+    "tests/test_workflow_skill_parity.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/tests/test_workflow_skill_parity.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "337eaf4e086031811685cfc957736a8eb30655e29f46ea23804306932d3a91cb",
+      "size": 4014
+    },
+    "tests/test_zotero_scripts.py": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "tests/test_zotero_scripts.py",
+      "policy": "managed",
+      "profile": "core",
+      "sha256": "e41c8c31ab0244761a0c67f3d98c225a869aefe941851bb6d81b489c02c84b1f",
+      "size": 63659
+    },
+    "workspace/sandbox/README.md": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/workspace/sandbox/README.md",
+      "policy": "seed",
+      "profile": "core",
+      "sha256": "4d8f5b9ae2f7b843281365b5820df9696b34188b3de73d9059888e4d01ee6a84",
+      "size": 268
+    }
+  },
+  "install_state_dir": ".trace-os",
+  "instruction_sections": [
+    {
+      "end": "<!-- trace-os:end core-workflow -->",
+      "id": "core-workflow",
+      "legacy": [
+        {
+          "from_version": "0.1.0-rc2",
+          "mode": "prefix",
+          "sha256": "d4d9af03329bc7d98e4df84f11d25dc40f4673125ac8112b9f6b18e5974be8e5",
+          "size": 6639
+        },
+        {
+          "from_version": "0.1.0-rc3",
+          "mode": "prefix",
+          "sha256": "9a6f68fe58ef9d759a7cea764b4d82d4ed4e19e68c7056f312cecced7ff995d2",
+          "size": 6715
+        },
+        {
+          "from_version": "0.1.0-rc17",
+          "mode": "prefix",
+          "sha256": "addd6644ea19efc733bbc525c092a613b09e209131c667ac61ff34b77ccd22df",
+          "size": 8240
+        }
+      ],
+      "path": "AGENTS.md",
+      "sha256": "35965ad44dac2a508c78ff85b3fb138aa86cc4830eb180f88a8670c592095de4",
+      "size": 13454,
+      "start": "<!-- trace-os:begin core-workflow -->",
+      "version": 6
+    },
+    {
+      "end": "<!-- trace-os:end skill-routing -->",
+      "id": "skill-routing",
+      "legacy": [
+        {
+          "from_version": "0.1.0-rc4",
+          "mode": "prefix",
+          "sha256": "7dccbe9e19cc146608f8445d2073e73be04720339460ea0ef7e990e4ee7716b2",
+          "size": 1226
+        },
+        {
+          "from_version": "0.1.0-rc17",
+          "mode": "prefix",
+          "sha256": "0b9fde016aef68c55147bcd53e10256f42928f386c8bb50de54b459b944a01b0",
+          "size": 5022
+        }
+      ],
+      "path": "ai/SKILLS-IN-USE.md",
+      "sha256": "e31962e57be73bc496c09207c69ce14b4c5b44adcd5d25022ef2b033a0024773",
+      "size": 5662,
+      "start": "<!-- trace-os:begin skill-routing -->",
+      "version": 3
+    },
+    {
+      "end": "<!-- trace-os:end working-routine -->",
+      "id": "working-routine",
+      "legacy": [
+        {
+          "from_version": "0.1.0-rc2",
+          "mode": "prefix",
+          "sha256": "6e5d664616287780e7f55c5ed4b49ca33e7bd54769d952354f2426332a4abc6a",
+          "size": 1027
+        }
+      ],
+      "path": "WORKFLOW.md",
+      "sha256": "850324ad2f4b8ee6f145593c526bbb8e0f6d5410e26b92df6432337d24fdfa18",
+      "size": 1497,
+      "start": "<!-- trace-os:begin working-routine -->",
+      "version": 3
+    }
+  ],
+  "license": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+  "optional_unbundled": {
+    "deep_review": "research-only model-assisted ledger matching",
+    "review_panel": "research-only model-assisted ledger matching"
+  },
+  "python_imports": {
+    "scripts/agentic_review.py": [
+      "__future__",
+      "argparse",
+      "datetime",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "re",
+      "shutil",
+      "signal",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "trace_record",
+      "trace_story"
+    ],
+    "scripts/bootstrap.py": [
+      "__future__",
+      "argparse",
+      "contextlib",
+      "datetime",
+      "fcntl",
+      "hashlib",
+      "json",
+      "msvcrt",
+      "os",
+      "pathlib",
+      "re",
+      "shutil",
+      "signal",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "threading",
+      "uuid",
+      "zipfile"
+    ],
+    "scripts/check_build_config.py": [
+      "pathlib",
+      "re",
+      "sys"
+    ],
+    "scripts/check_skill_handoff.py": [
+      "__future__",
+      "argparse",
+      "json",
+      "pathlib",
+      "sys"
+    ],
+    "scripts/check_skills.py": [
+      "bootstrap",
+      "json",
+      "pathlib",
+      "sys"
+    ],
+    "scripts/check_workflow.py": [
+      "__future__",
+      "argparse",
+      "ast",
+      "contextlib",
+      "datetime",
+      "fnmatch",
+      "hashlib",
+      "importlib",
+      "json",
+      "os",
+      "pathlib",
+      "re",
+      "shutil",
+      "subprocess",
+      "sys",
+      "time",
+      "trace_record",
+      "trace_report",
+      "traceback"
+    ],
+    "scripts/cite_suggest.py": [
+      "__future__",
+      "argparse",
+      "pathlib",
+      "re",
+      "sys",
+      "urllib",
+      "zotero_ask",
+      "zotero_common"
+    ],
+    "scripts/clean_corpus.py": [
+      "__future__",
+      "argparse",
+      "csv",
+      "html",
+      "pathlib",
+      "re",
+      "subprocess",
+      "sys",
+      "text_clean",
+      "zotero_common"
+    ],
+    "scripts/defect_ledger.py": [
+      "__future__",
+      "argparse",
+      "datetime",
+      "deep_review",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "re",
+      "record_privacy",
+      "review_grounding",
+      "review_panel",
+      "subprocess",
+      "sys",
+      "urllib"
+    ],
+    "scripts/docling_extract_corpus.py": [
+      "__future__",
+      "argparse",
+      "clean_corpus",
+      "docling",
+      "pathlib",
+      "sys",
+      "text_clean",
+      "zotero_common"
+    ],
+    "scripts/input_provenance.py": [
+      "__future__",
+      "datetime",
+      "hashlib",
+      "json",
+      "pathlib",
+      "record_privacy"
+    ],
+    "scripts/kit_projects.py": [
+      "__future__",
+      "argparse",
+      "contextlib",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "re",
+      "shutil",
+      "signal",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "threading",
+      "time",
+      "zipfile"
+    ],
+    "scripts/meeting_quotes.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "pathlib",
+      "re",
+      "sys"
+    ],
+    "scripts/record_privacy.py": [
+      "__future__",
+      "datetime",
+      "hashlib",
+      "json",
+      "pathlib",
+      "re",
+      "subprocess"
+    ],
+    "scripts/review_grounding.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "pathlib",
+      "re",
+      "sys"
+    ],
+    "scripts/review_inbox.py": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "pathlib",
+      "re",
+      "subprocess",
+      "sys"
+    ],
+    "scripts/shared_folder.py": [
+      "__future__",
+      "_winapi",
+      "argparse",
+      "ctypes",
+      "datetime",
+      "errno",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "re",
+      "shared_snapshot",
+      "shutil",
+      "subprocess",
+      "sys",
+      "tempfile"
+    ],
+    "scripts/shared_snapshot.py": [
+      "__future__",
+      "argparse",
+      "contextlib",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "re",
+      "shutil",
+      "sys",
+      "tempfile",
+      "unicodedata",
+      "uuid"
+    ],
+    "scripts/text_clean.py": [
+      "collections",
+      "re",
+      "sys"
+    ],
+    "scripts/trace_defaults.py": [],
+    "scripts/trace_record.py": [
+      "__future__",
+      "argparse",
+      "collections",
+      "contextlib",
+      "datetime",
+      "defect_ledger",
+      "hashlib",
+      "importlib",
+      "input_provenance",
+      "json",
+      "os",
+      "pathlib",
+      "re",
+      "record_privacy",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "textwrap",
+      "trace_defaults",
+      "trace_report",
+      "trace_story"
+    ],
+    "scripts/trace_report.py": [
+      "__future__",
+      "argparse",
+      "defect_ledger",
+      "json",
+      "pathlib",
+      "re",
+      "sys",
+      "trace_defaults",
+      "trace_record"
+    ],
+    "scripts/trace_skills.py": [
+      "__future__",
+      "argparse",
+      "bootstrap",
+      "contextlib",
+      "datetime",
+      "difflib",
+      "hashlib",
+      "importlib",
+      "json",
+      "os",
+      "pathlib",
+      "re",
+      "shlex",
+      "shutil",
+      "signal",
+      "stat",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "urllib"
+    ],
+    "scripts/trace_stats.py": [
+      "__future__",
+      "argparse",
+      "datetime",
+      "html",
+      "json",
+      "pathlib",
+      "re",
+      "subprocess",
+      "sys"
+    ],
+    "scripts/trace_story.py": [
+      "__future__",
+      "collections",
+      "datetime",
+      "hashlib",
+      "input_provenance",
+      "json",
+      "os",
+      "pathlib",
+      "re",
+      "record_privacy",
+      "tempfile"
+    ],
+    "scripts/zotero_add.py": [
+      "__future__",
+      "argparse",
+      "json",
+      "pathlib",
+      "re",
+      "sys",
+      "zotero_attach",
+      "zotero_common"
+    ],
+    "scripts/zotero_ask.py": [
+      "__future__",
+      "argparse",
+      "json",
+      "numpy",
+      "pathlib",
+      "sys",
+      "zotero_common",
+      "zotero_index"
+    ],
+    "scripts/zotero_attach.py": [
+      "__future__",
+      "argparse",
+      "html",
+      "json",
+      "pathlib",
+      "re",
+      "sys",
+      "time",
+      "zotero_common"
+    ],
+    "scripts/zotero_attach_cleantext.py": [
+      "__future__",
+      "argparse",
+      "pathlib",
+      "sys",
+      "time",
+      "zotero_attach",
+      "zotero_common"
+    ],
+    "scripts/zotero_clean.py": [
+      "__future__",
+      "argparse",
+      "collections",
+      "pathlib",
+      "sys",
+      "zotero_common"
+    ],
+    "scripts/zotero_common.py": [
+      "__future__",
+      "csv",
+      "datetime",
+      "json",
+      "pathlib",
+      "re",
+      "sys",
+      "time",
+      "unicodedata",
+      "urllib"
+    ],
+    "scripts/zotero_dedupe.py": [
+      "__future__",
+      "argparse",
+      "collections",
+      "json",
+      "pathlib",
+      "re",
+      "sys",
+      "time",
+      "zotero_common"
+    ],
+    "scripts/zotero_enrich.py": [
+      "__future__",
+      "argparse",
+      "html",
+      "json",
+      "pathlib",
+      "re",
+      "sys",
+      "time",
+      "urllib",
+      "zotero_common"
+    ],
+    "scripts/zotero_fill.py": [
+      "__future__",
+      "argparse",
+      "json",
+      "pathlib",
+      "sys",
+      "time",
+      "urllib",
+      "zotero_common"
+    ],
+    "scripts/zotero_index.py": [
+      "__future__",
+      "argparse",
+      "datetime",
+      "json",
+      "numpy",
+      "pathlib",
+      "re",
+      "sys",
+      "time",
+      "zotero_common"
+    ],
+    "scripts/zotero_reorg.py": [
+      "__future__",
+      "argparse",
+      "json",
+      "pathlib",
+      "sys",
+      "time",
+      "urllib",
+      "zotero_common"
+    ],
+    "tests/test_acceptance_queue.py": [
+      "__future__",
+      "argparse",
+      "ast",
+      "contextlib",
+      "hashlib",
+      "io",
+      "json",
+      "os",
+      "pathlib",
+      "re",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "trace_record",
+      "trace_report",
+      "trace_story",
+      "unittest"
+    ],
+    "tests/test_agent_session.py": [
+      "__future__",
+      "contextlib",
+      "io",
+      "json",
+      "os",
+      "pathlib",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "trace_record",
+      "types",
+      "unittest"
+    ],
+    "tests/test_agentic_review.py": [
+      "__future__",
+      "agentic_review",
+      "contextlib",
+      "hashlib",
+      "io",
+      "json",
+      "os",
+      "pathlib",
+      "shutil",
+      "signal",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "time",
+      "trace_record",
+      "unittest"
+    ],
+    "tests/test_bootstrap.py": [
+      "bootstrap",
+      "check_skills",
+      "contextlib",
+      "json",
+      "os",
+      "pathlib",
+      "re",
+      "shutil",
+      "signal",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "time",
+      "unittest",
+      "zipfile"
+    ],
+    "tests/test_check_skill_handoff.py": [
+      "__future__",
+      "check_skill_handoff",
+      "check_workflow",
+      "contextlib",
+      "io",
+      "json",
+      "pathlib",
+      "sys",
+      "tempfile",
+      "unittest"
+    ],
+    "tests/test_defect_ledger.py": [
+      "__future__",
+      "_pyio",
+      "contextlib",
+      "copy",
+      "datetime",
+      "defect_ledger",
+      "hashlib",
+      "io",
+      "json",
+      "os",
+      "pathlib",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "unittest"
+    ],
+    "tests/test_input_provenance.py": [
+      "argparse",
+      "contextlib",
+      "deep_review",
+      "defect_ledger",
+      "input_provenance",
+      "io",
+      "json",
+      "os",
+      "pathlib",
+      "record_privacy",
+      "review_panel",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "trace_record",
+      "trace_story",
+      "unittest"
+    ],
+    "tests/test_kit_projects.py": [
+      "bootstrap",
+      "contextlib",
+      "io",
+      "json",
+      "kit_projects",
+      "os",
+      "pathlib",
+      "shutil",
+      "signal",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "time",
+      "unittest",
+      "zipfile"
+    ],
+    "tests/test_meeting_quotes.py": [
+      "__future__",
+      "contextlib",
+      "hashlib",
+      "io",
+      "json",
+      "meeting_quotes",
+      "pathlib",
+      "re",
+      "shutil",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "unittest"
+    ],
+    "tests/test_record_keep.py": [
+      "__future__",
+      "argparse",
+      "contextlib",
+      "hashlib",
+      "io",
+      "json",
+      "os",
+      "pathlib",
+      "re",
+      "shutil",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "trace_record",
+      "trace_story",
+      "unittest"
+    ],
+    "tests/test_review_grounding.py": [
+      "contextlib",
+      "deep_review",
+      "hashlib",
+      "io",
+      "json",
+      "pathlib",
+      "review_grounding",
+      "sys",
+      "tempfile",
+      "unittest"
+    ],
+    "tests/test_shared_folder.py": [
+      "contextlib",
+      "io",
+      "json",
+      "os",
+      "pathlib",
+      "shared_folder",
+      "shutil",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "unittest"
+    ],
+    "tests/test_shared_snapshot.py": [
+      "contextlib",
+      "copy",
+      "io",
+      "json",
+      "pathlib",
+      "shared_snapshot",
+      "sys",
+      "tempfile",
+      "unittest"
+    ],
+    "tests/test_trace_project.py": [
+      "contextlib",
+      "defect_ledger",
+      "io",
+      "json",
+      "os",
+      "pathlib",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "trace_record",
+      "types",
+      "unittest"
+    ],
+    "tests/test_trace_record.py": [
+      "__future__",
+      "agentic_review",
+      "argparse",
+      "contextlib",
+      "hashlib",
+      "io",
+      "itertools",
+      "json",
+      "os",
+      "pathlib",
+      "re",
+      "record_privacy",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "trace_record",
+      "trace_story",
+      "unittest"
+    ],
+    "tests/test_trace_report.py": [
+      "__future__",
+      "contextlib",
+      "io",
+      "json",
+      "os",
+      "pathlib",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "trace_record",
+      "trace_report",
+      "unittest"
+    ],
+    "tests/test_trace_skills.py": [
+      "atexit",
+      "bootstrap",
+      "check_skills",
+      "contextlib",
+      "datetime",
+      "hashlib",
+      "io",
+      "json",
+      "os",
+      "pathlib",
+      "shutil",
+      "stat",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "trace_record",
+      "trace_skills",
+      "unittest"
+    ],
+    "tests/test_trace_skills_lifecycle.py": [
+      "atexit",
+      "bootstrap",
+      "check_skill_handoff",
+      "check_skills",
+      "contextlib",
+      "datetime",
+      "hashlib",
+      "io",
+      "json",
+      "os",
+      "pathlib",
+      "shutil",
+      "stat",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "trace_record",
+      "trace_skills",
+      "unittest"
+    ],
+    "tests/test_trace_skills_scenarios.py": [
+      "atexit",
+      "bootstrap",
+      "check_skill_handoff",
+      "check_skills",
+      "contextlib",
+      "functools",
+      "hashlib",
+      "io",
+      "json",
+      "os",
+      "pathlib",
+      "re",
+      "shutil",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "trace_record",
+      "trace_skills",
+      "unittest",
+      "zipfile"
+    ],
+    "tests/test_trace_stats.py": [
+      "contextlib",
+      "copy",
+      "datetime",
+      "io",
+      "json",
+      "pathlib",
+      "sys",
+      "tempfile",
+      "trace_stats",
+      "unittest"
+    ],
+    "tests/test_trace_story.py": [
+      "argparse",
+      "codecs",
+      "contextlib",
+      "io",
+      "json",
+      "os",
+      "pathlib",
+      "record_privacy",
+      "review_inbox",
+      "shutil",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "trace_record",
+      "trace_story",
+      "unittest"
+    ],
+    "tests/test_workflow_skill_parity.py": [
+      "check_workflow",
+      "json",
+      "pathlib",
+      "sys",
+      "tempfile",
+      "unittest"
+    ],
+    "tests/test_zotero_scripts.py": [
+      "__future__",
+      "cite_suggest",
+      "clean_corpus",
+      "contextlib",
+      "docling_extract_corpus",
+      "io",
+      "json",
+      "pathlib",
+      "subprocess",
+      "sys",
+      "tempfile",
+      "text_clean",
+      "unittest",
+      "urllib",
+      "zotero_add",
+      "zotero_attach",
+      "zotero_attach_cleantext",
+      "zotero_clean",
+      "zotero_common",
+      "zotero_dedupe",
+      "zotero_enrich",
+      "zotero_fill",
+      "zotero_index",
+      "zotero_reorg"
+    ]
+  },
+  "release_status": "local candidate; compatibility gates pending",
+  "releases": [
+    {
+      "archive_sha256": "56fc0031c0a4031e66b261c85b13d452a855d5652bd4572bb478bc9c1f2a13ab",
+      "source_commit": "65b49b4bc56c3090d565b1232d6bffc5fc21b707",
+      "version": "0.1.0-rc3"
+    },
+    {
+      "archive_sha256": "f89128c16f1cc3dc5298d06a6a7d961e01edf30d074e70026a9d366cef9babb7",
+      "source_commit": "4df24eae48afa8ba21621ac7a50e6c269e81b316",
+      "version": "0.1.0-rc4"
+    },
+    {
+      "archive_sha256": "5ff0209fc991e808a8552bebb663ca78018afb1c2c7bc845ea557298798d8f55",
+      "source_commit": "2000972819c731376878ef9d5cc7cf5329cff5e8",
+      "version": "0.1.0-rc5"
+    },
+    {
+      "archive_sha256": "26e794e000f527c9f994f489a536374c669181d5a2abb4c52e470f9f1f4319a4",
+      "source_commit": "86dfd6aab8fa8ca008ef007cc5be7e8825a32d7f",
+      "version": "0.1.0-rc6"
+    },
+    {
+      "archive_sha256": "47bda5c2c3ef2b94132a6846408c8c1e9e2b7610d81f81cb8997ba36dc82e88a",
+      "source_commit": "9b48a64b0d9020c42ec09cbc832bd8a25eaca838",
+      "version": "0.1.0-rc7"
+    },
+    {
+      "archive_sha256": "71565e12734914c8463a08a70728a089960651993defb685e64bc592987aa727",
+      "source_commit": "312b46941e6280d980c144e5d77fbe407b6f599a",
+      "version": "0.1.0-rc8"
+    },
+    {
+      "archive_sha256": "49f9704d332cbaa5eaa71df3e3983cda2d43629e74c7e742150cfbf6c47a24b7",
+      "source_commit": "a73f60950caaee77662d3342cbc129b9756e7087",
+      "version": "0.1.0-rc9"
+    },
+    {
+      "archive_sha256": "70b8eae33e278cb805d25adb598871edf2a257c8ee9413d8c531fe72b0106899",
+      "source_commit": "541042cdce18a8281df8959aac8a05f6320bc302",
+      "version": "0.1.0-rc10"
+    },
+    {
+      "archive_sha256": "4a025bc35e49324a452be3b6dd574b97fb78e7ece55d7d4ff8f55fbfa0e2c43d",
+      "source_commit": "e58f79368e08eb340d0747a9828d1d3e06324b95",
+      "version": "0.1.0-rc11"
+    },
+    {
+      "archive_sha256": "636519438ecc46f2ccc14f590bf6462a36d6fa33cdba32e91522634cbecf8b62",
+      "source_commit": "7006ddd28a0337967dc3a3283b5db38caedda09d",
+      "version": "0.1.0-rc12"
+    },
+    {
+      "archive_sha256": "5058cdc248fb59db4318f71b63ef81cbdd3cf406bcf2e52445e4000ffeb1ffbd",
+      "source_commit": "3215a34f51d7c324dc080172dde315634c3ba9ea",
+      "version": "0.1.0-rc14"
+    },
+    {
+      "archive_sha256": "e2e798367aeae1d050efe9752bdc7d82c47b8d36ddb3fe0dd777cf5421d9c313",
+      "source_commit": "0614c9ea471b186681e4ed77292142cb350d3f06",
+      "version": "0.1.0-rc15"
+    },
+    {
+      "archive_sha256": "c9d494b98f31db157942ae03f1e37cffb36be02a4a5eaf47928d0506b3762007",
+      "source_commit": "f2a8096cb0d9aa69f4bc4d42961b3b34b5ff5818",
+      "version": "0.1.0-rc16"
+    },
+    {
+      "archive_sha256": "3fad1bec74b353e5de16fb3c8671519cfd683bcf246953cf6f3c39f534126153",
+      "source_commit": "611807041628e989521a4f4463ed20469c756aeb",
+      "version": "0.1.0-rc17"
+    },
+    {
+      "archive_sha256": "2b325f157119e7755b25f1a199988898ea6f795fec050ab124baceaf7ff73094",
+      "source_commit": "737df44e5a8f619230c47de0818bf24c51ec6813",
+      "version": "0.1.0-rc18"
+    },
+    {
+      "archive_sha256": "94c7197117b5d189388b2fdcb43dbed2f5087fc4465644f7cd6186242d1f60b4",
+      "source_commit": "6852e6eae627f6fa88969831009fed9721ceae3e",
+      "version": "0.1.0-rc19"
+    },
+    {
+      "archive_sha256": "42b1660494fbde9f61da5c63ec626dc1afaf5f39062599d5986f294120035467",
+      "source_commit": "f24ab4ed37af71aad812be9c52f61ae45688f768",
+      "version": "0.1.0-rc20"
+    },
+    {
+      "archive_sha256": "8f4a67515b59c3fbe5d3b6581c109441e0737beffd297360eeed8f9997ad8fa4",
+      "source_commit": "94cee425060f60fdc9a9ed1377943b647233ca6b",
+      "version": "0.1.0-rc21"
+    },
+    {
+      "archive_sha256": "45f84352e6408547474a8b9234486007a9cb031373780bc4d3feb734b6171e9e",
+      "source_commit": "2232a4ebef353897111c3168963d9dca7834d951",
+      "version": "0.1.0-rc22"
+    },
+    {
+      "archive_sha256": "0ac1f54b3c24c17be5cac1d64818fe8d3aa6fc954e8b491670770fe3b118767e",
+      "source_commit": "9d137a6fcbcfc998954bff180347d7dbbe13d9b3",
+      "version": "0.1.0-rc23"
+    }
+  ],
+  "renames": [
+    {
+      "from": ".skills/contribution-record/SKILL.md",
+      "from_version": "0.1.0-rc4",
+      "to": ".skills/trace-state/SKILL.md"
+    },
+    {
+      "from": ".skills/workflow-check/SKILL.md",
+      "from_version": "0.1.0-rc4",
+      "to": ".skills/trace-check/SKILL.md"
+    },
+    {
+      "from": ".skills/correction-recheck/SKILL.md",
+      "from_version": "0.1.0-rc4",
+      "to": ".skills/trace-evaluate/SKILL.md"
+    },
+    {
+      "from": "scripts/contribution_story.py",
+      "from_version": "0.1.0-rc5",
+      "to": "scripts/trace_story.py"
+    },
+    {
+      "from": "tests/test_contribution_story.py",
+      "from_version": "0.1.0-rc5",
+      "to": "tests/test_trace_story.py"
+    },
+    {
+      "from": "scripts/project_health.py",
+      "from_version": "0.1.0-rc8",
+      "to": "scripts/trace_stats.py"
+    },
+    {
+      "from": "tests/test_project_health.py",
+      "from_version": "0.1.0-rc8",
+      "to": "tests/test_trace_stats.py"
+    },
+    {
+      "from": ".skills/trace-record/SKILL.md",
+      "from_version": "0.1.0-rc14",
+      "to": ".skills/trace-state/SKILL.md"
+    },
+    {
+      "from": ".skills/trace-transition/SKILL.md",
+      "from_version": "0.1.0-rc14",
+      "to": ".skills/trace-ctransition/SKILL.md"
+    },
+    {
+      "from": ".skills/trace-recheck/SKILL.md",
+      "from_version": "0.1.0-rc14",
+      "to": ".skills/trace-evaluate/SKILL.md"
+    }
+  ],
+  "runtime_dependencies": [
+    "Python >=3.11",
+    "Git",
+    "latexmk and TeX only for document builds"
+  ],
+  "schema_version": 1,
+  "source_commit": "a40d2393496ce8a31c83c59441ebce0e726aa96c",
+  "source_has_uncommitted_changes": false,
+  "supported_upgrades": [
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_record_schema": 1,
+      "from_version": "0.1.0-rc2",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "to_record_schema": 2,
+      "to_version": "0.1.0-rc3"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc3",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc4"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc4",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc5"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc5",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc6"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc6",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc7"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc7",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc8"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc8",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc9"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc9",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc10"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc10",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc11"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc11",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc12"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc12",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc14"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc14",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc15"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc15",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc16"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc16",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc17"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc17",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc18"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc18",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc19"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc19",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc20"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc20",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc21"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc21",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc22"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc22",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc23"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc23",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc24"
+    }
+  ],
+  "version": "0.1.0-rc24"
+}

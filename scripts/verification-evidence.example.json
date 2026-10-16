@@ -1,0 +1,42 @@
+{
+  "_comment": "Example evidence for `defect_ledger.py verify AH-000 --evidence <this file>`. Copy it, fill it in, and keep the filled copy wherever the recheck's evidence lives. Any extra key is preserved verbatim, which is where a consultation request, a reporter's reply, or a note about an unavailable reporter belongs. `recheck.later_run` is optional in general and required before a row that names a `faulty_default` can verify: it names a later trace record produced under the revised instruction and the commit or digest of that instruction, and it counts only when it resolves in the project: the record is ai/records/<id> with its evidence.json, and the version names a commit (or the sha256 of the instruction's content at one) that changes the faulty default. The values below are placeholders. Evidence written before 2026-09-20 spells that field `contribution` and is still read. When the row lists `objects`, the outputs the defect reaches, `target.corrected_object` names the one this recheck examined; each listed object needs its own file and its own passing recheck before the row verifies.",
+  "target": {
+    "defect_id": "AH-000",
+    "original_diagnosis": "The claim that the panel agreed cited a run in which two of five reviewers abstained.",
+    "corrected_object": "paper/sections/03-method.tex",
+    "object_hash": "9f2b0c1e4a7d5b83c6e0f1a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6"
+  },
+  "response": {
+    "corrective_action": "Replaced the agreement claim with the counted votes and named the abstentions.",
+    "implementer": "Jane Roe"
+  },
+  "recheck": {
+    "criterion": "The sentence no longer asserts agreement, and the reported counts match the run's defects.json.",
+    "method": "Re-read the corrected paragraph against the run record, then re-ran review_grounding.py on the quoted span.",
+    "outcome": "pass",
+    "evidence_ref": ".agent-reviews/deep-20260827/defects.json plus the diff at the recorded object hash",
+    "timestamp": "2026-09-07T14:20:00+02:00",
+    "later_run": {
+      "record": "ai/records/20260910-section-4-redraft, the next section drafted under the revised instruction",
+      "instruction_version": "AGENTS.md at commit 1a2b3c4"
+    }
+  },
+  "accountability": {
+    "checker": "John Doe",
+    "checker_kind": "human",
+    "recorder": "claude-opus-5",
+    "recorder_kind": "model",
+    "checker_implemented": false
+  },
+  "limits": {
+    "adequacy": "adequate",
+    "limitations": "The recheck covers the counted votes only. It does not revisit whether the lens set was the right one.",
+    "unresolved_contrary_evidence": "none",
+    "essential_context_missing": false
+  },
+  "consultation": {
+    "reporter": "the 2026-08-27 panel, which cannot be re-asked",
+    "requested": "not applicable",
+    "response": "none"
+  }
+}

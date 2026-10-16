@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "policy_epoch": "set by bootstrap to this project's baseline commit",
+  "accept_epoch": "set by bootstrap to this project's baseline commit",
+  "custom_bibliography": false,
+  "shared_root": "workspace/shared",
+  "incoming_root": "workspace/shared/incoming",
+  "ledger_prefix": "DEF"
+}

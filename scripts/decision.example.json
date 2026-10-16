@@ -1,0 +1,15 @@
+{
+  "question": "How should this source note distinguish evidence from interpretation?",
+  "type": "interpretation",
+  "status": "selected",
+  "human_inputs": ["T1"],
+  "human_direction": "The researcher requested that interpretations be distinguished from what the source directly supports.",
+  "proposed_by": {"name": "example-model", "kind": "agent"},
+  "selected_by": {"name": "example-model", "kind": "agent"},
+  "choice": "Separate source-supported statements and proposed interpretations in the note. Alternatives not taken: flagging interpretations inline, or leaving them out.",
+  "reason": "Two sections let a reader check each supported statement against its page without reading past the interpretations; inline flags mix the two in one sentence, and leaving them out would lose the readings the note exists to propose.",
+  "authority": "T1 delegates preparation of the source note under the stated criterion.",
+  "inputs": ["IN-001", "sources/notes/example-source-extract.md"],
+  "artifacts": ["sources/notes/example.md"],
+  "evidence": ["evidence.json#T1", "sources/notes/example.md"]
+}
