@@ -1,4 +1,4 @@
-# TRACE-OS
+w# TRACE-OS
 
 TRACE-OS is an operating system for AI-assisted research projects: the shared environment in which researchers direct the work and AI agents, such as Claude Code or Codex, carry it out and record it.
 It puts the five TRACE principles into practice: Track records, Review against sources, Accept independently, Control transitions, and Evaluate corrections.
@@ -8,7 +8,6 @@ The core tools use Git and Python and need no server, database or particular mod
 The principles and TRACE-OS are introduced in *TRACE: Governing AI-Assisted Research with Principles from Computer Science* (2026).
 TRACE-OS is distributed under a perpetual, non-exclusive licence, as its paper is on arXiv, with all other rights reserved; see LICENSE.
 The full compatibility matrix is pending; see RELEASE-NOTICE.md.
-TRACE-OS was called TRACEware in 0.1.0-rc19 and the TRACE kit (`trace-kit`) up to 0.1.0-rc18.
 
 Give an existing agent this instruction:
 
