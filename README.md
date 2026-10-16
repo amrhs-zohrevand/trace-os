@@ -1,4 +1,4 @@
-w# TRACE-OS
+# TRACE-OS
 
 TRACE-OS is an operating system for AI-assisted research projects: the shared environment in which researchers direct the work and AI agents, such as Claude Code or Codex, carry it out and record it.
 It puts the five TRACE principles into practice: Track records, Review against sources, Accept independently, Control transitions, and Evaluate corrections.
