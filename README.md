@@ -14,7 +14,7 @@ Give an existing agent this instruction:
 
 > Read SETUP-AGENT.md. Set up the academic profile in my chosen directory, run the checks, and report any remaining configuration.
 
-The same setup works without an agent. Python 3.11 or later and Git are required. LaTeX is optional until you build the paper or slides. No model subscription or cloud account is needed for core checks.
+Same setup works without an agent. Python 3.11 or later and Git are required. LaTeX is optional until you build the paper or slides. No model subscription or cloud account is needed for core checks.
 
 ```bash
 python scripts/bootstrap.py --target ../my-research --plan
