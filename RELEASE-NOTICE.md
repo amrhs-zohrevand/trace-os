@@ -1,18 +1,54 @@
 # Candidate status
 
-This is release candidate 0.1.0-rc24 of TRACE-OS, prepared on 2026-10-16 from its development repository.
+This is release candidate 0.1.0-rc25 of TRACE-OS, prepared on 2026-10-27 from its development repository.
 TRACE-OS was called TRACEware in 0.1.0-rc19 and the TRACE kit (`trace-kit`) up to 0.1.0-rc18.
 The release record retains the archive digest and validation results.
 The kit supplies record formats and commands for all five governing actions. It validates trace records and check rows at promotion and in the workflow check, and validates registries before reporting their contents. It distinguishes review, acceptance, return and refusal, retains failed rechecks, and reports which governing-action records are present, missing, not applicable or unknown. These checks establish neither that every action occurred nor that a recorded action was adequate, independent or authorized in fact.
 The export manifest records source files and digests.
-TRACE-OS is distributed under a perpetual, non-exclusive licence, as its paper is on arXiv, with all other rights reserved; its full text is `LICENSE` at the archive's root; setup does not copy it into a project, because a project's own licence is its owner's choice.
+TRACE-OS is distributed under a perpetual, non-exclusive licence with all other rights reserved, and has not yet been released as open source, because its paper is in preparation for submission and review; the authors will release it under an open-source licence. The licence's full text is `LICENSE` at the archive's root; setup does not copy it into a project, because a project's own licence is its owner's choice.
 No third-party fonts, journal classes, data, research prompts or Git history are included.
 Document skeletons refer to packages supplied by the user's TeX installation; those packages retain their own terms and are not bundled here.
 
-The release gate is the kit's local rehearsal (`starter/rehearse.py`), a migration rehearsal (installs of 0.1.0-rc23, 0.1.0-rc22 and 0.1.0-rc21, from their archives, updated to this release, rolled back and updated again), and the test suites, all run on one machine, macOS on Apple silicon with Python 3.12; nothing was run on Linux or Windows for this candidate.
-Their results are recorded with the release's evidence under sources/coding/trace-os-rc24-20261016/.
+The release gate is the kit's local rehearsal (`starter/rehearse.py`), a migration rehearsal (an install of 0.1.0-rc24, from its archive, updated to this release, rolled back and updated again), the test suites and the export compared twice, all run on one machine, macOS on Apple silicon with Python 3.12.
+This candidate changes no script, so the Linux rehearsal and the Windows run recorded for 0.1.0-rc24's checks were not repeated on this archive: the Linux rehearsal passed (arm64, Python 3.12 and 3.11, with the cheap checks on amd64) and the Windows run did not pass (Limits, below).
+Their results are recorded with the release's evidence under sources/coding/trace-os-rc25-20261027/ (this cut), sources/coding/trace-os-rc25-20261022/ (the first, unpublished cut) and sources/coding/trace-os-rc24-20261016/.
 Another researcher's setup trial is still pending and runs independently: a release does not wait for it.
 A passing mechanical check is not certification of research quality, model independence, or human acceptance.
+
+## Changes in 0.1.0-rc25
+
+TRACE-OS now says how to cite it and states where its licence stands.
+Its tools, records and instructions are those of 0.1.0-rc24; records, registries and ledger rows written by an earlier release keep their meaning.
+
+### How to cite
+
+- `CITATION.cff` at the archive's root names TRACE-OS, its repository and website, and the paper that introduces the principles.
+- `README.md` gains a How to cite section: the reference, a BibTeX entry, and an example methods sentence that names the release used, which is the `version` in `.trace-os/install.json`.
+- Like `LICENSE`, `CITATION.cff` is a release file: setup does not copy it into a project.
+- `CITATION.cff`, `LICENSE` and `README.md` write the second author's name as Aldona Kapacinskaite, in ASCII, at her request of 24 October 2026 for computer readability. 0.1.0-rc24 wrote it with diacritics.
+
+### Where the licence stands
+
+- `README.md`, `SETUP-AGENT.md` and the status paragraph above say that TRACE-OS has not yet been released as open source, because its paper is in preparation for submission and review, and that the authors will release it under an open-source licence.
+- `LICENSE` itself is unchanged from 0.1.0-rc24: a perpetual, non-exclusive licence to install and use TRACE-OS in one's own research, teaching and evaluation and to share it with the people one works with, with all other rights reserved. Making it public, in a public repository or as part of a public project, still needs the authors' written permission.
+
+### Release
+
+- The supported pair 0.1.0-rc24 to 0.1.0-rc25 is nominated, with unchanged profiles, agent adapters and schemas, and the rc24 archive joins the pinned `releases` list with the digest its release page published (`66be4630...5dc8`). No managed instruction section changes its version.
+
+### Updating from 0.1.0-rc24, or from an earlier candidate
+
+- A project on 0.1.0-rc24 updates in one step with this archive, as any single update does; the update changes `SETUP-AGENT.md` and `RELEASE-NOTICE.md`.
+- A project's `README.md` is the project's own once setup seeds it, so the How to cite section and the licence note reach the README of a new project only; a project set up by an earlier candidate keeps the README that candidate wrote, and its person may add them.
+- A project on 0.1.0-rc23 or earlier updates through the chain (`--update-chain`), which applies rc24 on the way. The releases page carries 0.1.0-rc24 and later; the archives a chain from rc23 or before needs come from a folder named with `--release-store`, as the notice for 0.1.0-rc24 says below.
+
+### Limits
+
+- This candidate changes text, `CITATION.cff` and the export manifest; no script changed. Its checks are the release checks of 0.1.0-rc24 run again on this cut, on one macOS machine. No model review was run on it, and no person has accepted the work.
+- A first cut of this candidate was made on 22 October 2026 from an earlier commit (archive sha256 `17ff1ebe...60f7`, checks under sources/coding/trace-os-rc25-20261022/). It was never published and is superseded by this cut, which differs from it only in the spelling of the second author's name in `CITATION.cff`, `LICENSE` and `README.md`.
+- On Windows, the kit's own test suite fails 146 of 1,325 tests on Windows Server 2025 with Python 3.12 and 3.11 (the run of 2026-10-22 on 0.1.0-rc24's archive): most of them in the tests' own removal of temporary Git repositories, the rest in path separators, a lock-folder move, text encoding and line endings. Because the release preflight runs that suite, an update on Windows stops at the preflight. The seven defects are AH-359 to AH-365, open; AH-282 and AH-283, on the entry-by-entry move that Windows falls back to, were open before. Export, digests, terminology, build configuration and the defect ledger pass on Windows.
+- AH-354 (the note a rehearsal run lost) and AH-357 (an automatic exclusion `keep` keeps) remain open, as in 0.1.0-rc24.
+- The licence was drafted by a model from the arXiv licence, as 0.1.0-rc24's notice says, and has not been read by a lawyer.
 
 ## Changes in 0.1.0-rc24
 

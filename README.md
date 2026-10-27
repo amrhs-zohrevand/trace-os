@@ -6,14 +6,15 @@ It consists of shared instructions, command-line tools and plain record files ke
 For each piece of work, it keeps records of what was asked of an AI agent, what the agent chose, what was checked, and who accepted it.
 The core tools use Git and Python and need no server, database or particular model subscription.
 The principles and TRACE-OS are introduced in *TRACE: Governing AI-Assisted Research with Principles from Computer Science* (2026).
-TRACE-OS is distributed under a perpetual, non-exclusive licence, as its paper is on arXiv, with all other rights reserved; see LICENSE.
+TRACE-OS is distributed under a perpetual, non-exclusive licence with all other rights reserved (see LICENSE): you may install and use it in your own research, teaching and evaluation, and share it with the people you work with.
+It has not yet been released as open source, because its paper is in preparation for submission and review. The authors will release it under an open-source licence.
 The full compatibility matrix is pending; see RELEASE-NOTICE.md.
 
 Give an existing agent this instruction:
 
 > Read SETUP-AGENT.md. Set up the academic profile in my chosen directory, run the checks, and report any remaining configuration.
 
-Same setup works without an agent. Python 3.11 or later and Git are required. LaTeX is optional until you build the paper or slides. No model subscription or cloud account is needed for core checks.
+The same setup works without an agent. Python 3.11 or later and Git are required. LaTeX is optional until you build the paper or slides. No model subscription or cloud account is needed for core checks.
 
 ```bash
 python scripts/bootstrap.py --target ../my-research --plan
@@ -22,23 +23,23 @@ python scripts/bootstrap.py --target ../my-research --apply
 
 A new project gets fresh Git history and empty research registries. Existing Git projects retain their history; setup reports conflicting files before writing.
 Read SETUP-AGENT.md for in-place setup, recovery, upgrades, skill installation and the setup receipt.
-An update follows a release pair the new release's manifest lists; SETUP-AGENT.md says how, and RELEASE-NOTICE.md which release this is. It reads historical trace records as version 1 and writes new records as version 2.
+An update follows a release pair the new release's manifest lists; SETUP-AGENT.md details how, and RELEASE-NOTICE.md which release this is. It reads historical trace records as version 1 and writes new records as version 2.
 On Windows, use `py -3.11` in place of `python` if the Python launcher selects the required version. On macOS, use `python3` when no `python` command is installed.
 
 ## How to cite
 
 If you use TRACE-OS or the TRACE principles in your research, please cite the paper that introduces them:
 
-> Zohrehvand, A., & Kapačinskaitė, A. (2026). *TRACE: Governing AI-assisted research with principles from computer science* [Working paper]. https://trace-os.org
+> Zohrehvand, A., & Kapacinskaite, A. (2026). *TRACE: Governing AI-assisted research with principles from computer science* [Working paper]. https://trace-os.org
 
 ```bibtex
 @misc{zohrehvand2026trace,
   title  = {{TRACE}: Governing {AI}-Assisted Research with Principles from Computer Science},
-  author = {Zohrehvand, Amirhossein and Kapa{\v{c}}inskait{\.{e}}, Aldona},
+  author = {Zohrehvand, Amirhossein and Kapacinskaite, Aldona},
   year   = {2026},
   note   = {Working paper},
   url    = {https://trace-os.org}
 }
 ```
 
-In a methods section, name the release you used, for example: "We kept the AI-assisted work of this project under the TRACE principles with TRACE-OS 0.1.0-rc24 (Zohrehvand and Kapačinskaitė 2026)." Your project's release is the `version` in `.trace-os/install.json`.
+In a methods section, name the release you used, for example: "We kept the AI-assisted work of this project under the TRACE principles with TRACE-OS 0.1.0-rc25 (Zohrehvand and Kapacinskaite 2026)." Your project's release is the `version` in `.trace-os/install.json`.

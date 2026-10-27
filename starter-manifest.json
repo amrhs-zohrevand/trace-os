@@ -118,6 +118,14 @@
       "sha256": "35965ad44dac2a508c78ff85b3fb138aa86cc4830eb180f88a8670c592095de4",
       "size": 13454
     },
+    "CITATION.cff": {
+      "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
+      "origin": "starter/files/CITATION.cff",
+      "policy": "release",
+      "profile": "core",
+      "sha256": "6ecfae167f990ccfe4739c8345ae06abd8e9b16cbe3e4d8a587511e112c4f8c8",
+      "size": 1127
+    },
     "CLAUDE.md": {
       "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
       "origin": "starter/files/CLAUDE.md",
@@ -131,32 +139,32 @@
       "origin": "starter/files/LICENSE",
       "policy": "release",
       "profile": "core",
-      "sha256": "fb91b048c670ffc15d2c886bf6be44c299b47e6a87d173a7599df72b1327b37f",
-      "size": 1915
+      "sha256": "9966a2d92d4c6cac2dbf2d402adf5d90e0f16732c1cfde2d16de78990aeb1944",
+      "size": 1913
     },
     "README.md": {
       "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
       "origin": "starter/files/README.md",
       "policy": "seed",
       "profile": "core",
-      "sha256": "9f2128182635f3c157b4008551876fbc083e50b0e67132d4f5bca97df22950b8",
-      "size": 2364
+      "sha256": "19e0b7d52c88bd89e20b974b8fe6539cf15620c0ea6a60a26f2f5f6e1e957d10",
+      "size": 3368
     },
     "RELEASE-NOTICE.md": {
       "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
       "origin": "starter/files/RELEASE-NOTICE.md",
       "policy": "managed",
       "profile": "core",
-      "sha256": "4b8bac752e2428595f5ac4dafe3faa840bd81913fe08ba6541b5f88f763649d1",
-      "size": 58076
+      "sha256": "190974328d48bf0b76fa7edf1696d63b1504884972597f92cd655f1eb2fb9b58",
+      "size": 62652
     },
     "SETUP-AGENT.md": {
       "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
       "origin": "starter/files/SETUP-AGENT.md",
       "policy": "managed",
       "profile": "core",
-      "sha256": "9fa62c9667fa045e3ce6a203db699ef30c48a318292fb567bfff2f04233771a6",
-      "size": 52461
+      "sha256": "1312f64f14d27e865cf27b810390599eabba3ce2df2e670584e3513104948429",
+      "size": 52600
     },
     "WORKFLOW.md": {
       "license_status": "LicenseRef-TRACE-OS-Nonexclusive-Distrib",
@@ -1803,6 +1811,11 @@
       "archive_sha256": "0ac1f54b3c24c17be5cac1d64818fe8d3aa6fc954e8b491670770fe3b118767e",
       "source_commit": "9d137a6fcbcfc998954bff180347d7dbbe13d9b3",
       "version": "0.1.0-rc23"
+    },
+    {
+      "archive_sha256": "66be4630b91cb132b0f3caf9b237b32fb21463df33f04506971d91873c255dc8",
+      "source_commit": "a40d2393496ce8a31c83c59441ebce0e726aa96c",
+      "version": "0.1.0-rc24"
     }
   ],
   "renames": [
@@ -1863,7 +1876,7 @@
     "latexmk and TeX only for document builds"
   ],
   "schema_version": 1,
-  "source_commit": "a40d2393496ce8a31c83c59441ebce0e726aa96c",
+  "source_commit": "3023540edacdd95a2e7a4db4e8bc28710ea89ce1",
   "source_has_uncommitted_changes": false,
   "supported_upgrades": [
     {
@@ -2223,7 +2236,24 @@
       "project_schema": 1,
       "record_schema": 2,
       "to_version": "0.1.0-rc24"
+    },
+    {
+      "agents": [
+        "claude",
+        "codex",
+        "cline",
+        "none"
+      ],
+      "from_version": "0.1.0-rc24",
+      "install_state_schema": 1,
+      "profiles": [
+        "academic",
+        "core"
+      ],
+      "project_schema": 1,
+      "record_schema": 2,
+      "to_version": "0.1.0-rc25"
     }
   ],
-  "version": "0.1.0-rc24"
+  "version": "0.1.0-rc25"
 }

@@ -6,7 +6,7 @@ abstract: "TRACE-OS is an operating system for AI-assisted research projects: th
 authors:
   - family-names: "Zohrehvand"
     given-names: "Amirhossein"
-  - family-names: "Kapačinskaitė"
+  - family-names: "Kapacinskaite"
     given-names: "Aldona"
 repository-code: "https://github.com/amrhs-zohrevand/trace-os"
 url: "https://trace-os.org"
@@ -21,7 +21,7 @@ preferred-citation:
   authors:
     - family-names: "Zohrehvand"
       given-names: "Amirhossein"
-    - family-names: "Kapačinskaitė"
+    - family-names: "Kapacinskaite"
       given-names: "Aldona"
   year: 2026
   notes: "Working paper"
